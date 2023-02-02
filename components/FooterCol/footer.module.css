@@ -1,0 +1,11 @@
+.foote_col h2 {
+  margin-bottom: 40px;
+}
+.foote_col .foote_col_item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.foote_col .foote_col_item:hover {
+  color: #03a84e;
+}
