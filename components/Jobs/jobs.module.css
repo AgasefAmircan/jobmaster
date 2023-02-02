@@ -1,0 +1,30 @@
+.jobs {
+  background-color: #f4f7f7;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+
+.jobs .jobs_main {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .jobs .jobs_main {
+    display: grid;
+    grid-template-columns: 48% 48%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .jobs .jobs_main {
+    display: grid;
+    grid-template-columns: 95%;
+  }
+}

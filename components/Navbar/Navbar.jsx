@@ -1,24 +1,10 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import { FaAngleUp, FaArtstation, FaGripLines, FaTimes } from "react-icons/fa";
+import { FaArtstation, FaGripLines, FaTimes } from "react-icons/fa";
 import style from "./navbar.module.scss";
 
 const Navbar = () => {
   const [toggler, setToggler] = useState(false);
-  const [toTop, setToTop] = useState(false);
-
-  // if (typeof window !== "undefined") {
-  //   window.onscroll = function () {
-  //     if (
-  //       document.body.scrollTop >= 300 ||
-  //       document.documentElement.scrollTop >= 300
-  //     ) {
-  //       setToTop(true);
-  //     } else {
-  //       setToTop(false);
-  //     }
-  //   };
-  // }
 
   const handleToggle = () => {
     setToggler(!toggler);
@@ -36,19 +22,19 @@ const Navbar = () => {
         <Link href="/">
           <Link href="">Home</Link>
         </Link>
-        <Link href="/jobs">
+        <Link href="/">
           <Link href="">Find Jobs</Link>
         </Link>
-        <Link href="/employerdetail">
+        <Link href="/">
           <Link href="">Employers Details</Link>
         </Link>
-        <Link href="/candidate">
+        <Link href="/">
           <Link href="">Candidate</Link>
         </Link>
-        <Link href="/article">
+        <Link href="/">
           <Link href="">Blog</Link>
         </Link>
-        <Link href="/contact">
+        <Link href="/">
           <Link href="">Contact</Link>
         </Link>
       </div>
@@ -114,14 +100,6 @@ const Navbar = () => {
           </div>
         )}
       </div>
-
-      {toTop && (
-        <a href="#top">
-          <div className={style.to_top}>
-            <FaAngleUp className={style.to_top_icon} />
-          </div>
-        </a>
-      )}
     </div>
   );
 };
